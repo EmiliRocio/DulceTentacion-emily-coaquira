@@ -57,7 +57,7 @@ async function buscarPostres(termino) {
 
     // TheMealDB devuelve { meals: null } si no hay resultados
     if (!data.meals || data.meals.length === 0) {
-      mostrarError(`No encontramos "${termino}". Prueba con otro nombre en inglés (ej: cheesecake, brownie, tiramisu).`);
+      mostrarError(`No encontramos "${termino}". Prueba con otro nombre `);
       return;
     }
 
